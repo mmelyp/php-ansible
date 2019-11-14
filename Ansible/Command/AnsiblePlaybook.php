@@ -221,7 +221,7 @@ final class AnsiblePlaybook extends AbstractAnsibleCommand implements AnsiblePla
      */
     public function inventoryFile(string $inventory = '/etc/ansible/hosts'): AnsiblePlaybookInterface
     {
-        $this->addOption('--inventory-file', $inventory);
+        $this->addOption('--inventory', $inventory);
         $this->hasInventory = true;
 
         return $this;
